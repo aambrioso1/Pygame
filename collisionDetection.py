@@ -1,3 +1,6 @@
+# A program from Al Sweigar'ts nice book Making Games with Python & Pygames
+# THe program can be found here. https://inventwithpython.com/invent4thed/ chapter19.html 
+
 """
 pygame -  A library of methods for writing games in Python
 sys - part of the python standard library.  A library which allows to access variables and functions used by the interpreter 
@@ -43,8 +46,7 @@ FOODSIZE = 20
 player = pygame.Rect(300, 100, 50, 50)
 
 # Initialize and empty list to store the food rectangles.  Note that randint is 
-# used to place the food rectangles randomly on the display.  By creating a list 
-# of rectangles we speed up the program.
+# used to place the food rectangles randomly on the display.
 foods = []
 for i in range(20):
     foods.append(pygame.Rect(random.randint(0, WINDOWWIDTH - FOODSIZE),
@@ -62,9 +64,11 @@ MOVESPEED = 6
 while True:
     # Check for events.
     for event in pygame.event.get():
+            # Does the player want to quit.
             if event.type == QUIT:
                 pygame.quit()
                 sys.exit()
+            # Has the player pressed a cursor key.
             if event.type == KEYDOWN:
             # Change the keyboard variables.
                 if event.key == K_LEFT or event.key == K_a:
@@ -94,7 +98,7 @@ while True:
                 if event.key == K_x:
                     player.top = random.randint(0, WINDOWHEIGHT - player.height)
                     player.left = random.randint(0, WINDOWWIDTH - player.width)
-# When the player clicks a spot on the game window with the mouse and new food square is generated in a random position in the window.
+# When the player clicks a spot on the game window with the mouse a new food square is generated in a random position in the window.
                 if event.type == MOUSEBUTTONUP:
                     foods.append(pygame.Rect(event.pos[0], event.pos[1],FOODSIZE, FOODSIZE))
 
