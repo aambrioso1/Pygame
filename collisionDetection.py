@@ -1,5 +1,6 @@
 # A program from Al Sweigar'ts nice book Making Games with Python & Pygames
-# THe program can be found here. https://inventwithpython.com/invent4thed/ chapter19.html 
+# The book can be found here:  https://inventwithpython.com/invent4thed/
+# The program can be found here: https://inventwithpython.com/invent4thed/ chapter19.html 
 
 """
 pygame -  A library of methods for writing games in Python
