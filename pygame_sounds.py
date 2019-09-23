@@ -33,12 +33,6 @@ pygame.display.set_caption('Halloween Background Music')
 
 # Loading and playing a sound effect:
 soundObj = pygame.mixer.Sound('C:\\Users\\aambrioso\\Pygame\\assets\\wav\\BatmanPunch.wav')
-"""
-soundObj.play()
-import time
-time.sleep(1) # wait and let the sound play for 1 seconds
-soundObj.stop()
-"""
 
 # We load a play an mp3 file as background music.
 pygame.mixer.music.load('C:\\Users\\aambrioso\\Pygame\\assets\\mp3\\DevilsPiano.mp3')
@@ -68,7 +62,7 @@ while True:
                     pygame.mixer.music.stop()
                     soundObj.play()
                     import time
-                    time.sleep(1) # wait a for 1 second while sound plays.
+                    time.sleep(1) # wait for 1 second while sound plays.
                     soundObj.stop()
                     # Start the background music again.
                     pygame.mixer.music.play(-1, 0.0)
