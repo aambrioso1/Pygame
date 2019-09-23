@@ -10,11 +10,11 @@ WINDOWWIDTH = 500
 WINDOWHEIGHT = 500
 windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT),
        0, 32)
-pygame.display.set_caption('A Jazz Space')
+pygame.display.set_caption('Halloween Background Music')
 
 
 # Loading and playing a sound effect:
-soundObj = pygame.mixer.Sound('beep1.ogg')
+soundObj = pygame.mixer.Sound('C:\\Users\\aambrioso\\Pygame\\assets\\wav\\BatmanPunch.wav')
 """
 soundObj.play()
 import time
@@ -23,7 +23,7 @@ soundObj.stop()
 """
 
 # We load a play an mp3 file as background music.
-pygame.mixer.music.load('This_is_a_Jazz_Space.mp3')
+pygame.mixer.music.load('C:\\Users\\aambrioso\\Pygame\\assets\\mp3\\DevilsPiano.mp3')
 pygame.mixer.music.play(-1,0.0) # play forever, -1, start at 0.0
 musicPlaying = True # We will use this to turn the music on and off
 
@@ -44,7 +44,7 @@ while True:
                     else:
                         pygame.mixer.music.play(-1, 0.0)
                     musicPlaying = not musicPlaying
-                if event.key == K_b:
+                if event.key == K_p:
                     pygame.mixer.music.stop()
                     soundObj.play()
                     import time
