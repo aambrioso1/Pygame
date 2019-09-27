@@ -1,7 +1,7 @@
 """
 A simple zhombie animation.   A character bounces off of walls randomly.   Some gravestones are drawn in the background.   Spookie music will play and stop playing if the user presses the m key.   if the player presses the t key the character turns into a zombie.
 
-We use four assets: (1) a regular character image (2) a zhombie image, (3) A spooky music file, and (4) A gravestone image.  The code will need to be adjusted to retrieve the files from the appropriate directory for users installation.
+We use four assets: (1) a regular character image (2) a zhombie image, (3) A spooky music file, and (4) A gravestone image.  The code will need to be adjusted to retrieve the files from the appropriate directory for user’s installation.
 """
 
 import pygame, sys
@@ -28,7 +28,7 @@ zombie_Alex = pygame.image.load('C:\\Users\\aambrioso\\Pygame\\assets\\images\\z
 Mario_Alex2 = pygame.image.load('C:\\Users\\aambrioso\\Pygame\\assets\\images\\zhombies\\\Mario_Alex2.png')
 gravestoneImg = pygame.image.load('C:\\Users\\aambrioso\\Pygame\\assets\\images\\gravestone.png')
 
-# Resize the image so they fit the window better.   The first integer in degrees will rotate the image the second resizes the image by that factor.
+# Resize the images so they fit the window better.   The first integer in degrees will rotate the image the second resizes the image by that factor.
 zhombie1Img = pygame.transform.rotozoom(zhombie1Img, 0, 0.1)
 zombie_Alex = pygame.transform.rotozoom(zombie_Alex, 0, 0.1)
 Mario_Alex2 = pygame.transform.rotozoom(Mario_Alex2, 0, 0.5)
@@ -40,7 +40,7 @@ ZOMBIE = False # Decide whether to draw zombie or not.
 z1_x = 10
 z1_y = 10
 
-# Initial speed of zombie
+# Initial speed of zombie.
 X_SPEED = 4
 Y_SPEED = 4
 
@@ -51,7 +51,7 @@ pygame.mixer.music.load('C:\\Users\\aambrioso\\Pygame\\assets\\mp3\\DevilsPiano.
 musicPlaying = False # We will use this to turn the music on and off
 
 
-while True: # The main game loop.  Moves the zhombie.  Switches direction randomly if zhombie hits the wall.  Draws everything.  Check if we have press the m key to turn the music on or off.
+while True: # The main game loop.  Moves the zombie.  Switches direction randomly if zombie hits the wall.  Draws everything.  Check if we have press the m key to turn the music on or off.
     DISPLAYSURF.fill(BLACK)
     z1_x += X_SPEED
     z1_y += Y_SPEED
@@ -78,7 +78,7 @@ while True: # The main game loop.  Moves the zhombie.  Switches direction random
         DISPLAYSURF.blit(gravestoneImg, (i*50, 50))
         DISPLAYSURF.blit(gravestoneImg, (i*50, 150))
     
-    # Draw zhombie in a new position.
+    # Draw zombie in a new position.
     # DISPLAYSURF.blit(zhombie1Img, (z1_x, z1_y))
     if ZOMBIE:
         DISPLAYSURF.blit(zombie_Alex, (z1_x, z1_y))
