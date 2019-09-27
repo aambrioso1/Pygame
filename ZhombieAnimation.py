@@ -1,5 +1,5 @@
 """
-A simple zhombie animation.   A character bounces off of walls randomly.   Some gravestones are drawn in the background.   Spookie music will play and stop playing if the user presses the m key.   if the player presses the t key the character turns into a zombie.
+A simple zombie animation.   A character bounces off of walls randomly.   Some gravestones are drawn in the background.   Spookie music will play and stop playing if the user presses the m key.   if the player presses the t key the character turns into a zombie.
 
 We use four assets: (1) a regular character image (2) a zhombie image, (3) A spooky music file, and (4) A gravestone image.  The code will need to be adjusted to retrieve the files from the appropriate directory for user’s installation.
 """
