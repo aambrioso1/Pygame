@@ -51,7 +51,7 @@ pygame.mixer.music.load('C:\\Users\\aambrioso\\Pygame\\assets\\mp3\\DevilsPiano.
 musicPlaying = False # We will use this to turn the music on and off
 
 
-while True: # The main game loop.  Moves the zombie.  Switches direction randomly if zombie hits the wall.  Draws everything.  Check if we have press the m key to turn the music on or off.
+while True: # The main game loop.  Moves the zombie.  Switches direction randomly if zombie hits the wall.  Draws everything.  Checks if the user has pressed the m key to turn the music on or off.
     DISPLAYSURF.fill(BLACK)
     z1_x += X_SPEED
     z1_y += Y_SPEED
