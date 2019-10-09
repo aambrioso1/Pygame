@@ -34,7 +34,7 @@ Mario_Alex2 = pygame.transform.rotozoom(Mario_Alex2, 0, 0.5)
 gravestoneImg = pygame.transform.rotozoom(gravestoneImg, 0, 0.1)
 
 ZOMBIE = False # Decide whether to draw zombie or not.
-ZOMBIE_CT = 10 # Number of Zombies
+ZOMBIE_CT = 10 # The number of Zombies drawn.
 
 
 
