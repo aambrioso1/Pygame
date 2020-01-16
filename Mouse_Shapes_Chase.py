@@ -1,4 +1,8 @@
 """
+This program has two parts.   The first part draws some common shapes.   The second part has a small red ball in a window 
+that moves to the position of the mouse.   The chase part is commented out in the intial program below.
+
+These are the modules used by the program:
 pygame -  A module of methods for writing games in Python
 sys - part of the Python standard library.  A library which allows the programmer access variables and functions used by the interpreter
 pygame.locals - a module containing variables used by Pygame.
