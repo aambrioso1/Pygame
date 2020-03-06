@@ -1,5 +1,5 @@
 """
-Program to demonstrate event handling in with the Pygame module.
+Program that demonstrates the sprite class in Pygame.
 """
 import pygame, sys
 import random
@@ -39,13 +39,6 @@ background = pygame.Surface(screen.get_size())
 # https://www.pygame.org/docs/ref/surface.html#pygame.Surface.convert
 background = background.convert()
 background.fill(BLACK)
-"""
-# We load a play an mp3 file as background music.
-pygame.mixer.music.load('C:\\Users\\aambrioso\\Pygame\\assets\\mp3\\DevilsPiano.mp3')
-# pygame.mixer.music.play(-1,0.0) # play forever, -1, start at 0.0
-musicPlaying = False # We will use this to turn the music on and off
-"""
-
 
 
 class Character(pygame.sprite.Sprite):
