@@ -42,10 +42,10 @@ class Zombie(pygame.sprite.Sprite):
        pygame.sprite.Sprite.__init__(self)
        screen = pygame.display.get_surface()    
        
-       image1 = pygame.image.load('C:\\Users\\aambrioso\\Pygame\\assets\\images\\zhombies\\zombie_Alex.png')
+       image1 = pygame.image.load('C:\\Users\\Alex\\Pygame\\assets\\images\\zhombies\\zombie_Alex.png')
        zombie_image = pygame.transform.rotozoom(image1, 0, 0.1)
        
-       image2 = pygame.image.load('C:\\Users\\aambrioso\\Pygame\\assets\\images\\zhombies\\\Mario_Alex2.png')
+       image2 = pygame.image.load('C:\\Users\\Alex\\Pygame\\assets\\images\\zhombies\\\Mario_Alex2.png')
        human_image = pygame.transform.rotozoom(image2, 0, 0.4)
        #Mario_Alex2 = pygame.transform.rotozoom(Mario_Alex2, 0, 0.5)
        # Fetch the rectangle object that has the dimensions of the image
@@ -64,7 +64,7 @@ class Zombie(pygame.sprite.Sprite):
     def change(self):
        if self.HUMAN:
            self.original = self.image
-           image1 = pygame.image.load('C:\\Users\\aambrioso\\Pygame\\assets\\images\\zhombies\\zombie_Alex.png')
+           image1 = pygame.image.load('C:\\Users\\Alex\\Pygame\\assets\\images\\zhombies\\zombie_Alex.png')
            self.image = pygame.transform.rotozoom(image1, 0, 0.1)
            self.HUMAN = not self.HUMAN
        else:
